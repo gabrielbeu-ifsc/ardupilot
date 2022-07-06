@@ -104,12 +104,12 @@ const AP_Param::Info Copter::var_info[] = {
     // @Bitmask: 0:Roll,1:Pitch,2:Yaw,3:AccelZ
     GSCALAR(gcs_pid_mask,           "GCS_PID_MASK",     0),
 
-    // @Param: MY_NEW_PARAMETER
-    // @DisplayName: My New Parameter
-    // @Description: bla bla bla
-    // @Range: 0 150
+    // @Param: FUEL_TANK
+    // @DisplayName: Fuel Tank
+    // @Description: Amont of fuel in the tank 
+    // @Range: 0 100
     // @User: Advanced
-    GSCALAR(my_new_parameter, "MY_NEW_PARAMETER", MY_NEW_PARAMETER_DEFAULT),
+    GSCALAR(fuel_tank, "FUEL_TANK", FUEL_TANK_DEFAULT),
 
 #if MODE_RTL_ENABLED == ENABLED
     // @Param: RTL_ALT
