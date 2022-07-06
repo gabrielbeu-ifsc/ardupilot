@@ -1,3 +1,4 @@
+
 #pragma once
 
 #include <inttypes.h>
@@ -82,6 +83,10 @@ class Compass
 {
 friend class AP_Compass_Backend;
 public:
+
+    /*teste*/
+    AP_Int16 _my_new_lib_parameter; // description
+
     Compass();
 
     /* Do not allow copies */
