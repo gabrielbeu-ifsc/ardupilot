@@ -1,3 +1,4 @@
+
 #pragma once
 
 #include <AP_Common/AP_Common.h>
@@ -222,6 +223,7 @@ public:
         k_param_gcs4,
         k_param_gcs5,
         k_param_gcs6,
+	k_param_my_new_parameter,
 
         //
         // 135 : reserved for Solo until features merged with master
@@ -392,6 +394,7 @@ public:
     AP_Float        throttle_filt;
     AP_Int16        throttle_behavior;
     AP_Float        pilot_takeoff_alt;
+    AP_Int16	    my_new_parameter;
 
 #if MODE_RTL_ENABLED == ENABLED
     AP_Int32        rtl_altitude;
