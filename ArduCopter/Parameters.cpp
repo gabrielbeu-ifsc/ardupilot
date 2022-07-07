@@ -105,13 +105,61 @@ const AP_Param::Info Copter::var_info[] = {
     GSCALAR(gcs_pid_mask,           "GCS_PID_MASK",     0),
 
 
-    // @Parm: FUEL_TANK_IFSC
-    // @DisplayName: Fuel Tank IFSC
-    // @Description: bla bla bla
+    // @Parm: ESC1_CURRENT
+    // @DisplayName: ESC1 current
+    // @Description: Esc1 input current (measured)
+    // @Range: 0 200
+    // @Units: A
+    // @User: Advanced
+    GSCALAR(esc1_current, "ESC1_CURRENT", 0),
+
+    // @Parm: ESC2_CURRENT
+    // @DisplayName: ESC2 current
+    // @Description: Esc2 input current (measured)
+    // @Range: 0 200
+    // @Units: A
+    // @User: Advanced
+    GSCALAR(esc2_current, "ESC2_CURRENT", 0),
+
+    // @Parm: ESC3_CURRENT
+    // @DisplayName: ESC3 current
+    // @Description: Esc3 input current (measured)
+    // @Range: 0 200
+    // @Units: A
+    // @User: Advanced
+    GSCALAR(esc3_current, "ESC3_CURRENT", 0),
+
+    // @Parm: ESC4_CURRENT
+    // @DisplayName: ESC4 current
+    // @Description: Esc4 input current (measured)
+    // @Range: 0 200
+    // @Units: A
+    // @User: Advanced
+    GSCALAR(esc4_current, "ESC4_CURRENT", 0),
+
+    // @Parm: ESC5_CURRENT
+    // @DisplayName: ESC5 current
+    // @Description: Esc5 input current (measured)
+    // @Range: 0 200
+    // @Units: A
+    // @User: Advanced
+    GSCALAR(esc5_current, "ESC5_CURRENT", 0),
+
+    // @Parm: ESC6_CURRENT
+    // @DisplayName: ESC6 current
+    // @Description: Esc6 input current (measured)
+    // @Range: 0 200
+    // @Units: A
+    // @User: Advanced
+    GSCALAR(esc6_current, "ESC6_CURRENT", 0),
+    
+    // @Parm: FUEL_TANK
+    // @DisplayName: Fuel Tank
+    // @Description: Amount of fuel left in the tank
     // @Range: 0 100
     // @Units: %
     // @User: Advanced
-    GSCALAR(fuel_tank_ifsc, "FUEL_TANK_IFSC", FUEL_TANK_IFSC_DEFAULT),
+    GSCALAR(fuel_tank, "FUEL_TANK", 0),
 
 #if MODE_RTL_ENABLED == ENABLED
     // @Param: RTL_ALT

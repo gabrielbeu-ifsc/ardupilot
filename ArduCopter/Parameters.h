@@ -221,7 +221,13 @@ public:
         k_param_takeoff_trigger_dz_old,
         k_param_gcs3,
         k_param_gcs_pid_mask,    // 126
-	k_param_fuel_tank_ifsc,
+        k_param_esc1_current,    
+        k_param_esc2_current,    
+        k_param_esc3_current,    
+        k_param_esc4_current,    
+        k_param_esc5_current,    
+        k_param_esc6_current,    
+	    k_param_fuel_tank,      // 133
 
         //
         // 135 : reserved for Solo until features merged with master
@@ -380,12 +386,20 @@ public:
 
     AP_Int16        format_version;
 
+    // IFSC New Parameters
+    AP_Int16	    esc1_current;
+    AP_Int16	    esc2_current;
+    AP_Int16	    esc3_current;
+    AP_Int16	    esc4_current;
+    AP_Int16	    esc5_current;
+    AP_Int16	    esc6_current;
+    AP_Int16	    fuel_tank;
+
     // Telemetry control
     //
     AP_Int16        sysid_this_mav;
     AP_Int16        sysid_my_gcs;
     AP_Int8         telem_delay;
-    AP_Int16	    fuel_tank_ifsc;
 
     AP_Float        throttle_filt;
     AP_Int16        throttle_behavior;
